@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Amiri", serif;
+}
+:root {
+  --primary: #2563eb;
+  --primaryDark: #1e40af;
+  --background: #f8fafc;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --textPrimary: #111827;
+  --textSecondary: #6b7280;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+/* 
+h1: 36
+h2: 28
+h3: 22
+body: 16
+samll: 14
+*/
+header {
+  display: flex;
+  background-color: var(--background);
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 80px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+nav {
+  display: flex;
+  /* margin-left: 30px; */
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--textPrimary);
+  font-size: 16px;
+  font-weight: bold;
+  /* padding: 12px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: inherit; */
+}
+nav ul li:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 10px 25px rgb(197, 195, 195);
+  background-color: inherit; */
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: var(--textPrimary);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: inherit;
+}
+.dropdown:hover .dropbtn {
+  transform: scale(1.05);
+  /* box-shadow: 0 5px 15px rgb(197, 195, 195); */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background);
+  min-width: 120px;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: var(--textPrimary);
+  padding: 12px 16px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .buttons button {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  color: var(--textPrimary);
+  cursor: pointer;
+  background-color: #ffffff;
+}
+header .buttons #start {
+  background-color: var(--primary);
+  color: #ffff;
+}
+header .buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgb(197, 195, 195);
+}
+header .buttons button:active {
+  transform: scale(0.95);
+}
+.hero {
+  width: 100%;
+  height: calc(100vh - 95px);
+  /* background-image: url("r.png"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background-color: #245c8b;
+} */
