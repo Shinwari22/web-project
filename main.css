@@ -38,6 +38,7 @@ header {
 header .logo {
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 header .logo img {
   width: 80px;
@@ -90,7 +91,7 @@ nav ul li:hover {
   display: none;
   position: absolute;
   background-color: var(--background);
-  min-width: 120px;
+  min-width: 140px;
   z-index: 1;
 }
 .dropdown-content a {
@@ -107,7 +108,9 @@ nav ul li:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+header .buttons {
+  margin-left: 40px;
+}
 header .buttons button {
   margin-left: 20px;
   padding: 10px;
@@ -116,6 +119,8 @@ header .buttons button {
   color: var(--textPrimary);
   cursor: pointer;
   background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
 }
 header .buttons #start {
   background-color: var(--primary);
@@ -130,16 +135,57 @@ header .buttons button:active {
 }
 .hero {
   width: 100%;
+  position: relative;
   height: calc(100vh - 95px);
-  /* background-image: url("r.png"); */
+  background-image: url("./assets/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
-/* .hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  background-color: #245c8b;
-} */
+.hero-title {
+  width: 40%;
+  position: absolute;
+  right: 8%;
+  top: 20%;
+}
+.hero-title h1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.hero-title h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 40px 0px;
+}
+.hero-buttons {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+}
+.hero-buttons button {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--textPrimary);
+  margin: 8px;
+}
+.hero-buttons #w-btn {
+  background-color: var(--background);
+  color: var(--textPrimary);
+  font-weight: 700;
+  font-size: 16px;
+}
+.hero-buttons #b-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+#b-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--primaryDark);
+}
