@@ -172,6 +172,7 @@ header .buttons button:active {
   border-radius: 5px;
   color: var(--textPrimary);
   margin: 8px;
+  cursor: pointer;
 }
 .hero-buttons #w-btn {
   background-color: var(--background);
@@ -185,7 +186,106 @@ header .buttons button:active {
   font-weight: 700;
   font-size: 16px;
 }
-#b-btn:hover {
+/* .hero .hero-buttons #b-btn:hover {
   transform: scale(1.05);
   background-color: var(--primaryDark);
+} */
+.homepage-cards {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--background);
+}
+.homepage-cards .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0px;
+  gap: 10px;
+}
+.homepage-cards .cards .card {
+  width: 25%;
+  border-radius: 10px;
+  /* position: relative; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--primaryDark);
+  padding: 15px;
+}
+
+.homepage-cards .cards .card img {
+  width: 65%;
+  height: 200px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: -10%; */
+}
+.homepage-cards .cards .card h3 {
+  font-size: 22px;
+  color: #ffffff;
+}
+.homepage-cards .cards .card p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.trust {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--background);
+}
+.trust .cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 40px 30px 0px;
+}
+.trust .cards .card {
+  width: 27%;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 5px;
+}
+.trust .cards .card h3 {
+  font-size: 22px;
+}
+
+.faq {
+  padding: 60px 20px;
+  background-color: var(--background);
+}
+.faq-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--primaryDark);
+}
+.faq-question {
+  max-width: 800px;
+  margin: auto;
+}
+details {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  transition: 0.3s;
+}
+details:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+summary {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--textPrimary);
+  position: relative;
+}
+details p {
+  margin-top: 10px;
+  color: var(--textSecondary);
+  line-height: 1.6;
 }
