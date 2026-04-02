@@ -30,7 +30,7 @@ samll: 14
 header {
   display: flex;
   background-color: var(--background);
-  padding: 10px;
+  padding: 10px 30px;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
@@ -38,25 +38,29 @@ header {
 header .logo {
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  gap: 15px;
+  /* margin-right: 30px; */
 }
 header .logo img {
   width: 80px;
   border-radius: 50%;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
 }
 
 nav {
   display: flex;
+  justify-content: space-between;
   /* margin-left: 30px; */
 }
 nav ul {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 nav ul li {
   list-style: none;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 nav ul li a {
   text-decoration: none;
@@ -107,9 +111,6 @@ nav ul li:hover {
 }
 .dropdown:hover .dropdown-content {
   display: block;
-}
-header .buttons {
-  margin-left: 40px;
 }
 header .buttons button {
   margin-left: 20px;
