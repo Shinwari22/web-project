@@ -4,6 +4,10 @@
   padding: 1rem 3rem;
   background-color: var(--primary);
   border-radius: 8px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 .footer-section .footer-cards {
   display: flex;
@@ -18,23 +22,23 @@
   flex: 1 1 220px;
   max-width: 220px;
 }
-.footer-section .menu {
+.footer-section .foot-menu {
   /* text-align: right; */
   /* padding: 1rem 2rem; */
 }
-.footer-section .menu hr {
+.footer-section .foot-menu hr {
   width: 60%;
   height: 2px;
   border-radius: 50%;
   margin: 8px 0;
 }
-.footer-section .menu ul {
+.footer-section .foot-menu ul {
   list-style: none;
 }
-.footer-section .menu ul li {
+.footer-section .foot-menu ul li {
   margin: 5px 0;
 }
-.footer-section .menu ul li a {
+.footer-section .foot-menu ul li a {
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;

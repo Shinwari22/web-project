@@ -22,53 +22,49 @@
   </head>
   <body>
     <!-- -============================ Header =========================================== -->
-    <header>
-      <div class="logo">
-        <img src="./assets/logo5.png" alt="" />
-        <h1>د ګودام مدیریت سیستم</h1>
-      </div>
-      <nav>
+    <header class="navbar">
+      <div class="logo"> <img src="./assets/logo5.png" alt="" /> <span> ګودام سیستم </span></div>
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-btn">&#9776;</label>
+      <nav class="menu">
         <ul>
           <li><a href="">کور صفحه</a></li>
           <li><a href="">خاصیتونه</a></li>
-          <li>
-            <div class="dropdown">
-              <button class="dropbtn">ماډیولونه &#9660;</button>
-              <div class="dropdown-content">
-                <a href="">رسیدلی توکی</a>
-                <a href="">ازمویل</a>
-                <a href="">فرمایش اخیستل</a>
-                <a href="">توکو دقت کتل</a>
-                <a href="">لیږدول</a>
-                <a href="">بیرته واپس کیدل</a>
-              </div>
-            </div>
-          </li>
+            <li><a href="">ماډیولونه</a></li>
           <li><a href=""> زمونږ په اړه</a></li>
           <li><a href="">اړیکه نیول</a></li>
         </ul>
-      </nav>
-      <div class="buttons">
+         <div class="buttons">
         <button>داخل شی</button>
         <button id="start">شروع کیدل</button>
       </div>
+      </nav>
+      
     </header>
+    <!-- ================================== Hero Section============================= -->
     <main class="container">
-      <!-- ================================== Hero Section============================= -->
+
       <section class="hero">
+        <img src="./assets/images (10).jpeg" alt="">
         <div class="hero-contents">
-          <div class="hero-title">
+          <div class="hero-text">
+
             <h1>د ګودام ټول خدمات مو له مونږ سره لا غوره کړی</h1>
             <h3>
               موجوده مالونه، مالونو لیږدونه، مالونو پیک کول او د مالونو دقت ساتل
               له عصري ګودام سیستم سره مدیریت کړی
             </h3>
+               <button id="w-btn">خدمات شروع کړی</button>
+               <button id="b-btn">خدمات وګوری</button>
           </div>
-          <div class="hero-buttons">
+          
+         
+          <!-- <div class="hero-buttons">
             <button id="w-btn">خدمات شروع کړی</button>
             <button id="b-btn">خدمات وګوری</button>
-          </div>
+          </div> -->
         </div>
+
       </section>
       <!-- ============================ Homepage Cards section ================================ -->
       <section class="homepage-cards">
@@ -76,27 +72,39 @@
 
         <div class="cards">
           <div class="card">
-            <img src="./assets/image7.jpeg" alt="" />
-            <h3>موجوده توکو مدیریت</h3>
-            <p>
-              د ذخیری لیول معلومول، موقعیت او د ریښتنی وخت په اساس د توکو انتقال
-            </p>
+            <div class="card-img">
+              <img src="./assets/image7.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>موجوده توکو مدیریت</h3>
+              <p>
+                د ذخیری لیول معلومول، موقعیت او د ریښتنی وخت په اساس د توکو انتقال
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="./assets/image8.jpeg" alt="" />
-            <h3>فرمایشاتو پروسس کول</h3>
-            <p>
-              د مشتری فرمایش مدیریت کول، بسته بندی کول او موثره راپور وړاندی کول
-            </p>
+            <div class="card-img">
+              <img src="./assets/image8.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>فرمایشاتو پروسس کول</h3>
+              <p>
+                د مشتری فرمایش مدیریت کول، بسته بندی کول او موثره راپور وړاندی کول
+              </p>
+            </div>
           </div>
 
           <div class="card">
-            <img src="./assets/image2.jpeg" alt="" />
-            <h3>دوخت په اساس تحلیل کول</h3>
-            <p>
-              په ژوندی بڼه معلوماتو بورډ څخه موجوده توکو اندازه او د هغوی راپور
-              کتل
-            </p>
+            <div class="card-img">
+              <img src="./assets/image2.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>دوخت په اساس تحلیل کول</h3>
+              <p>
+                په ژوندی بڼه معلوماتو بورډ څخه موجوده توکو اندازه او د هغوی راپور
+                کتل
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -104,7 +112,7 @@
       <!-- ================================= Trust Business section ====================== -->
 
       <section class="trust">
-        <h1>نړیوال تجارت له خوا منل شوی</h1>
+        <h2>نړیوال تجارت له خوا منل شوی</h2>
         <div class="cards">
           <div class="card">
             <div class="card-icon">
@@ -188,7 +196,7 @@
     <footer class="footer-section">
       <div class="footer-cards">
 
-        <div class="menu">
+        <div class="foot-menu">
           <h3>ګودام مدیرت سیستم</h3>
           <hr>
                  <ul>
