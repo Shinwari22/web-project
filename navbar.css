@@ -127,3 +127,41 @@
 #toggle:checked ~ .buttons button {
   display: flex;
 }
+@media (min-width: 992px) {
+  .toggle-btn {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary);
+    border-radius: 8px;
+    color: #ffffff;
+    height: 90px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 22%;
+    width: 70%;
+    text-align: center;
+    z-index: 1;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .navbar .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
