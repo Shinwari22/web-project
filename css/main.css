@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Amiri", serif;
+}
+:root {
+  --primary: #2563eb;
+  --primaryDark: #1e40af;
+  --background: #f8fafc;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --textPrimary: #111827;
+  --textSecondary: #6b7280;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+/* 
+h1: 36
+h2: 28
+h3: 22
+body: 16
+samll: 14
+*/

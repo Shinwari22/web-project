@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ګودام مدیریت سیستم</title>
+   <title>کور صفحه</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,20 +16,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
   <body>
     <!-- -============================ Header =========================================== -->
     <header class="navbar">
-      <div class="logo"> <img src="./assets/logo5.png" alt="" /> <span> ګودام سیستم </span></div>
+      <div class="logo"> <a href="./index.html"><img src="./assets/logo5.png" alt="" /></a>  <span> ګودام سیستم </span></div>
       <input type="checkbox" id="toggle">
       <label for="toggle" class="toggle-btn">&#9776;</label>
       <nav class="menu">
         <ul>
-          <li><a href="">کور صفحه</a></li>
-          <li><a href="">خاصیتونه</a></li>
+          <li><a href="./index.html">کور صفحه</a></li>
+          <li><a href="./featurePage.html">خاصیتونه</a></li>
             <li><a href="">ماډیولونه</a></li>
           <li><a href=""> زمونږ په اړه</a></li>
           <li><a href="">اړیکه نیول</a></li>
@@ -57,14 +58,7 @@
                <button id="w-btn">خدمات شروع کړی</button>
                <button id="b-btn">خدمات وګوری</button>
           </div>
-          
-         
-          <!-- <div class="hero-buttons">
-            <button id="w-btn">خدمات شروع کړی</button>
-            <button id="b-btn">خدمات وګوری</button>
-          </div> -->
         </div>
-
       </section>
       <!-- ============================ Homepage Cards section ================================ -->
       <section class="homepage-cards">
@@ -116,7 +110,7 @@
         <div class="cards">
           <div class="card">
             <div class="card-icon">
-              <i
+              <i id="icon"
                 class="fa-solid fa-triangle-exclamation fa-2x"
                 style="color: rgb(11, 67, 167)"
               ></i>
@@ -126,7 +120,7 @@
 
           <div class="card">
             <div class="card-icon">
-              <i
+              <i id="icon"
                 class="fa-solid fa-qrcode fa-2x"
                 style="color: rgb(11, 67, 167)"
               ></i>
@@ -136,7 +130,7 @@
 
           <div class="card">
             <div class="card-icon">
-              <i
+              <i id="icon"
                 class="fa-solid fa-warehouse fa-2x"
                 style="color: rgb(11, 67, 167)"
               ></i>
@@ -196,7 +190,7 @@
     <footer class="footer-section">
       <div class="footer-cards">
 
-        <div class="foot-menu">
+        <div class="foot-menu" id="card">
           <h3>ګودام مدیرت سیستم</h3>
           <hr>
                  <ul>
@@ -207,22 +201,23 @@
             <li><a href="">اړیکه نیول</a></li>
           </ul>
         </div>
-        <div class="contact-info">
+        <div class="contact-info"  id="card">
           <h3>اړیکه او پته</h3>
           <hr>
           <h4>مونږ سره اړیکه ونیسی</h4>
           <p><strong>بریښنالینک:</strong>kabulhouse@info.com</p>
           <p><strong>تلیفون شمیره: ۹۳۷۰۰۵۱۶۲۱۶</strong></p>
+          <p><strong>پته: کابل افغانستان شهرنو پارک</strong></p>
         </div>
          
-        <div class="legal">
+        <div class="legal"  id="card">
           <h3>قانون</h3>
           <hr>
           <a href="./privacy_policy.html">د محرمیت پالیسی</a>
           <a href="./termsOfServices.html">د خدماتو شرایط</a>
         </div>
       
-        <div class="social-media">
+        <div class="social-media"  id="card">
           <h3>مونږ تعقیب کړی</h3>
           <hr>
           <a href="www.twitter.com/warehouse_system"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
@@ -234,7 +229,6 @@
       <div class="copy">
          <p> &copy; 2026 ډیزاین، ټول دقیق او صحت دي</p>
       </div>
-        
     </footer>
   </body>
 </html>

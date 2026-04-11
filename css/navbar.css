@@ -139,6 +139,7 @@
     background-color: var(--primary);
     border-radius: 8px;
     color: #ffffff;
+    padding: 20px 0;
     height: 90px;
   }
   .menu {
@@ -163,5 +164,22 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+  }
+  .logo img {
+    width: 70px;
+    border-radius: 50%;
+  }
+  .logo span {
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+}
+@media (min-width: 1200px) {
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
   }
 }

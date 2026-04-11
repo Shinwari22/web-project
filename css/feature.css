@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* h3: font-size: 1.5rem;
+   h1:   font-size: 2.3rem
+   cards h1: font-size: 1.4rem;
+   cards text: font-size: 16px;
+*/
+
+.features {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.features h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--textPrimary);
+}
+.feature-cards {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+  grid-template-columns: 1fr;
+  margin: 40px 0;
+  padding: 0 10px;
+  gap: 30px;
+}
+.feature-cards .card {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  width: 300px;
+}
+.feature-cards .card .card-icon {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.card .card-text {
+  text-align: start;
+}
+.card .card-text h3 {
+  font-size: 1.2srem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.card .card-text p {
+  font-size: 16px;
+  color: var(--textPrimary);
+  font-weight: 700;
+}
+.choose-us {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.choose-us h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--textPrimary);
+  margin-bottom: 25px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards .card {
+  display: flex;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  padding: 5px;
+}
+.cards .card .icon {
+  padding: 10px;
+  font-size: 1.5rem;
+  /* margin-left: 10px; */
+  margin-top: 8px;
+}
+.cards .card .text {
+  text-align: start;
+  padding: 10px;
+}
+.cards .card .text h3 {
+  font-size: 1.2srem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.cards .card .text p {
+  font-size: 14px;
+  text-align: justify;
+}
