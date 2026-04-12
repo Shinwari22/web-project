@@ -24,16 +24,16 @@
   <body>
     <!-- -============================ Header =========================================== -->
     <header class="navbar">
-      <div class="logo"> <a href="./index.html"><img src="./assets/logo5.png" alt="" /></a>  <span> ګودام سیستم </span></div>
+      <div class="logo"> <a href="./homepage.html"><img src="./assets/logo5.png" alt="" /></a>  <span> ګودام سیستم </span></div>
       <input type="checkbox" id="toggle">
       <label for="toggle" class="toggle-btn">&#9776;</label>
       <nav class="menu">
         <ul>
-          <li><a href="./index.html">کور صفحه</a></li>
+          <li><a href="./homepage.html">کور صفحه</a></li>
           <li><a href="./featurePage.html">خاصیتونه</a></li>
-            <li><a href="">ماډیولونه</a></li>
-          <li><a href=""> زمونږ په اړه</a></li>
-          <li><a href="">اړیکه نیول</a></li>
+            <li><a href="./modulePage.html">ماډیولونه</a></li>
+          <li><a href="./aboutPage.html"> زمونږ په اړه</a></li>
+          <li><a href="./contactPage.html">اړیکه نیول</a></li>
         </ul>
          <div class="buttons">
         <button>داخل شی</button>
@@ -55,8 +55,8 @@
               موجوده مالونه، مالونو لیږدونه، مالونو پیک کول او د مالونو دقت ساتل
               له عصري ګودام سیستم سره مدیریت کړی
             </h3>
-               <button id="w-btn">خدمات شروع کړی</button>
-               <button id="b-btn">خدمات وګوری</button>
+               <a href="">خدمات شروع کړی</a>
+               <a href="#see_service" id="b_btn">خدمات وګوری</a>
           </div>
         </div>
       </section>
@@ -138,6 +138,10 @@
             <h3>په نړیواله سطحه د ملاتړ او خدمات وړاندی کول</h3>
           </div>
         </div>
+        <div class="see-services" style="display: none;" id="see_service">
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/_grpOkkd8p8" title="What is Warehouse Management System? How WMS Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <a href="" id="close">بند کړۍ</a>
+        </div>
       </section>
       <!-- ====================================== FAQ Section ================================== -->
       <section class="faq">
@@ -194,11 +198,11 @@
           <h3>ګودام مدیرت سیستم</h3>
           <hr>
                  <ul>
-            <li><a href="">کور صفحه</a></li>
-            <li><a href="">خاصیتونه</a></li>
-            <li><a href="">ماډیول</a></li>
-            <li><a href=""> زمونږ په اړه</a></li>
-            <li><a href="">اړیکه نیول</a></li>
+            <li><a href="./homepage.html">کور صفحه</a></li>
+            <li><a href="./featurePage.html">خاصیتونه</a></li>
+            <li><a href="./modulePage.html">ماډیول</a></li>
+            <li><a href="./aboutPage.html"> زمونږ په اړه</a></li>
+            <li><a href="./contactPage.html">اړیکه نیول</a></li>
           </ul>
         </div>
         <div class="contact-info"  id="card">
@@ -230,5 +234,25 @@
          <p> &copy; 2026 ډیزاین، ټول دقیق او صحت دي</p>
       </div>
     </footer>
+
+    <script>
+      const btn = document.getElementById("b_btn");
+      const video = document.querySelector('.see-services');
+      const closeUp = document.getElementById("close");
+
+      btn.addEventListener('click', function(){
+        if(video.style.display === "none") {
+          video.style.display = "flex";
+        } else {
+          video.style.display = "none"
+        }
+
+        closeUp.addEventListener('click', function(){
+          if(video.style.display === "flex") {
+            video.style.display = "none"
+          }
+        })
+      })
+    </script>
   </body>
 </html>

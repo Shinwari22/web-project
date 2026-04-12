@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.module {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 40px;
+}
+.module h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+.module .module-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.module-cards .card {
+  width: 300px;
+  display: flex;
+  align-items: start;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  text-align: start;
+}
+.card .card-icon {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+.card .card-text {
+  margin-right: 20px;
+}
+.card .card-text h3 {
+  text-align: start;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.card .card-text p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--textPrimary);
+}
+/* .card .card-text button {
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--primary);
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+} */
+
+.business-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 10px;
+}
+.business-cards h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+.business-cards .card {
+  width: 95%;
+  display: flex;
+  align-items: start;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.business-cards .card .card-icon {
+  font-size: 3.5rem;
+  margin-top: 20px;
+}
+.business-cards .card .card-text {
+  margin-right: 20px;
+}
+.business-cards .card .card-text h3 {
+  text-align: start;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.business-cards .card .card-text p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--textPrimary);
+}
+@media (min-width: 480px) {
+  .module {
+    padding: 5px;
+  }
+  .module-cards .card {
+    width: 300px;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    text-align: start;
+  }
+  .business-cards h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 30px;
+  }
+  .business-cards .card {
+    width: 85%;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .business-cards .card {
+    width: 80%;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 800px) {
+  .module-cards .card {
+    width: 350px;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    text-align: start;
+  }
+  .card .card-text h3 {
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary);
+  }
+}
+@media (min-width: 980px) {
+  .module-cards .card {
+    width: 450px;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    text-align: start;
+  }
+  .module h1 {
+    font-size: 2.3rem;
+  }
+  .card .card-text p {
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--textPrimary);
+  }
+  .business-cards .card {
+    width: 70%;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .business-cards .card .card-text h3 {
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+  }
+  .business-cards .card .card-text p {
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--textPrimary);
+  }
+}
+
+/*
+  .business-cards h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .module .module-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+} */

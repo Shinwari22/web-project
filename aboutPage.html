@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ps" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>زمونږ په اړه</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a href="./homepage.html">
+          <img src="./assets/logo5.png" alt="logo"
+        /></a>
+        <span> ګودام سیستم </span>
+      </div>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="toggle-btn">&#9776;</label>
+      <nav class="menu">
+        <ul>
+          <li><a href="./homepage.html">کور صفحه</a></li>
+          <li><a href="./featurePage.html">خاصیتونه</a></li>
+          <li><a href="./modulePage.html">ماډیولونه</a></li>
+          <li><a href="./aboutPage.html"> زمونږ په اړه</a></li>
+          <li><a href="./contactPage.html">اړیکه نیول</a></li>
+        </ul>
+        <div class="buttons">
+          <button>داخل شی</button>
+          <button id="start">شروع کیدل</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about">
+        <h1>زمونږ د ګودام په اړه</h1>
+        <div class="about-cards">
+          <div class="card">
+            <div class="card-img"><img src="./assets/tech2.jpeg" alt="" /></div>
+            <div class="card-text">
+              <h3>موږ څوک یو</h3>
+              <p>
+                موږ د یو تکنالوژی پر بنسټ شرکت یو چی د عصري ګودام مدیریت حلونه
+                وړاندی کوو. زمونږ سیستمونه سوداګرو سره مرسته کوي چی موجودی په
+                اسانه مدریت کړي او توکی په ریښتیني وخت کی تعقیب کړي. موږ د نوښت
+                په وسیله ګودامونه چټک، هوښیار او اغیزمن جوړوو.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="./assets/purpose.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <h3>زمونږ موخه</h3>
+              <p>
+                زمونږ موخه داده چی د هوښیاری ټکنالوژی په مرسته د ګودام عملیات ښه
+                او اسانه کړو. موږ هڅه کوو چی تیروتنی کمی کړو حالت وڅیړو، توکو
+                سمه ساتنه وکړو او د موجودی دقیق کنټرول یقینی کړو. د اتومات
+                سیسټمونو او معلوماتو په کارولو سره سوداګرو ته غوره پایلی ورکوو.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="./assets/tech1.jpeg" alt="" /></div>
+            <div class="card-text">
+              <h3>زمونږ ارزښتونه</h3>
+              <p>
+                موږ باور لرو چی دوامداره نوښت د پرمختګ لپاره ډیر مهم دی. باور او
+                اعتماد زمونږ د خدماتو بنسټ جوړوی د پیریدونوکو ارزښتونه ساتو،
+                توکو ساتنه، لیږدونه،ریښتیني راپورنه او تل ثابت کیفیت وړاندی کوو.
+                د پیرودونکو رضایت زمونږ لومړیتوب دی او موږ اوږدمهاله اړیکی
+                جوړوو.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="feedback-section">
+    <div class="feadback">
+        <h1>خپل نظر دی ورکړه</h1>
+        <p>مونږ ستاسی نظر ته ارزښت ورکوو، تر څو مو د ګودام سیستم مدیریت له غوره شي.</p>
+        <form action="">
+            <label for="name">نوم</label>
+            <input type="text" placeholder="نوم دی ولیکه" name="name" id="name"><br>
+
+            <label for="email">بریښنالینک</label>
+            <input type="email" placeholder="بریښنالینک دی ولیکه" name="email" id="email"><br>
+
+            <label for="rating">درجه</label>
+            <search id="rating">
+                <option value="">غوره ⭐⭐⭐⭐⭐</option>
+                <option value="">ښه ⭐⭐⭐⭐</option>
+                <option value="">متوسط ⭐⭐⭐</option>
+                <option value="">کمزوری ⭐⭐</option>
+                <option value="">ډیر کمزوری ⭐</option>
+            </search>
+
+            <label for="feadback">ستا نظر</label>
+            <textarea name="feadback" id="feadback" rows="10"></textarea>
+            <button type="submit">نظر دی ولیږه</button>
+        </form>
+    </div>
+</section> -->
+      <section class="team">
+        <h1>ټیم</h1>
+        <div class="persons">
+          <div class="person-card">
+            <div class="card-img"><img src="./assets/ceo.jpeg" alt="" /></div>
+            <div class="card-text">
+              <h1>Mr. SpongeBob</h1>
+              <p>CEO</p>
+            </div>
+            <button>نور په اړه ولولی</button>
+          </div>
+          <div class="person-card">
+            <div class="card-img">
+              <img src="./assets/manager1.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <h1>Mr. Patrick</h1>
+              <p>Manager</p>
+            </div>
+            <button>نور په اړه ولولی</button>
+          </div>
+          <div class="person-card">
+            <div class="card-img">
+              <img src="./assets/supporter.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <h1>Mr. Samson</h1>
+              <p>Supporter</p>
+            </div>
+            <button>نور په اړه ولولی</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-cards">
+        <div class="foot-menu" id="card">
+          <h3>ګودام مدیرت سیستم</h3>
+          <hr />
+          <ul>
+            <li><a href="">کور صفحه</a></li>
+            <li><a href="">خاصیتونه</a></li>
+            <li><a href="">ماډیول</a></li>
+            <li><a href=""> زمونږ په اړه</a></li>
+            <li><a href="">اړیکه نیول</a></li>
+          </ul>
+        </div>
+        <div class="contact-info" id="card">
+          <h3>اړیکه او پته</h3>
+          <hr />
+          <h4>مونږ سره اړیکه ونیسی</h4>
+          <p><strong>بریښنالینک:</strong>kabulhouse@info.com</p>
+          <p><strong>تلیفون شمیره: ۹۳۷۰۰۵۱۶۲۱۶</strong></p>
+          <p><strong>پته: کابل افغانستان شهرنو پارک</strong></p>
+        </div>
+
+        <div class="legal" id="card">
+          <h3>قانون</h3>
+          <hr />
+          <a href="./privacy_policy.html">د محرمیت پالیسی</a>
+          <a href="./termsOfServices.html">د خدماتو شرایط</a>
+        </div>
+
+        <div class="social-media" id="card">
+          <h3>مونږ تعقیب کړی</h3>
+          <hr />
+          <a href="www.twitter.com/warehouse_system"
+            ><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+          ></a>
+          <a href="www.instagram.com/warehouse_system"
+            ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+          ></a>
+          <a href="www.tiktok.com/warehouse_system"
+            ><i class="fa-brands fa-tiktok" style="color: #ffffff"></i
+          ></a>
+          <a href="www.youtube.com/warehouse_system"
+            ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copy">
+        <p>&copy; 2026 ډیزاین، ټول دقیق او صحت دي</p>
+      </div>
+    </footer>
+  </body>
+</html>

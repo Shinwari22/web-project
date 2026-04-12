@@ -9,7 +9,6 @@
    cards h1: font-size: 1.4rem;
    cards text: font-size: 16px;
 */
-
 .features {
   width: 100%;
   margin: 50px 0;
@@ -22,7 +21,7 @@
 .features h1 {
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--textPrimary);
+  color: var(--primary);
 }
 .feature-cards {
   display: grid;
@@ -48,7 +47,7 @@
   text-align: start;
 }
 .card .card-text h3 {
-  font-size: 1.2srem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--primary);
 }
@@ -97,7 +96,7 @@
   padding: 10px;
 }
 .cards .card .text h3 {
-  font-size: 1.2srem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--primary);
 }

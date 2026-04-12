@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.about h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.about .about-cards {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  gap: 30px;
+  margin-top: 30px;
+}
+.about .about-cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.about-cards .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  /* margin-right: 20px; */
+}
+.about-cards .card .card-text {
+  text-align: start;
+  text-align: justify;
+  padding: 8px;
+}
+.about-cards .card .card-text h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.about-cards .card .card-text p {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--textPrimary);
+}
+/* .feedback-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+}
+.feedback {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.feedback h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--textPrimary);
+}
+.feedback p {
+  text-align: center;
+  margin: 25px 0;
+  color: var(--textPrimary);
+  font-weight: 700;
+  font-size: 16px;
+}
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: var(--textPrimary);
+}
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid var(--border);
+  outline: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+}
+textarea {
+  resize: none;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: none;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: var(--primaryDark);
+} */
+.team {
+  margin: 40px 0;
+}
+.team h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.persons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5px;
+}
+.persons .person-card {
+  width: 300px;
+  /* padding: 10px; */
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px;
+}
+.person-card .card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.person-card .card-text {
+  text-align: center;
+}
+.person-card .card-text h1 {
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+.person-card .card-text p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 700;
+  /* margin: 7px 0; */
+}
+.person-card button {
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--primary);
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.person-card button:hover {
+  transform: scale(1.05);
+  background-color: var(--primaryDark);
+}
+.person-card button:active {
+  transform: scale(0.8);
+  background-color: var(--primaryDark);
+}
+@media (min-width: 633px) {
+  .about .about-cards .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .about-cards .card img {
+    width: 200px;
+    height: 190px;
+    border-radius: 5px;
+    margin-top: 40px;
+    /* margin-right: 20px; */
+  }
+}
+@media (min-width: 800px) {
+  .about .about-cards .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .about-cards .card img {
+    width: 200px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 40px;
+    /* margin-right: 20px; */
+  }
+  .persons .person-card {
+    width: 250px;
+    /* padding: 10px; */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .person-card button {
+    padding: 8px 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .about-cards .card img {
+    width: 200px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 40px;
+    /* margin-right: 20px; */
+  }
+  .persons .person-card {
+    width: 300px;
+    /* padding: 10px; */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .person-card button {
+    padding: 8px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-cards .card img {
+    width: 200px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+  .persons .person-card {
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .person-card button {
+    padding: 8px 10px;
+  }
+}
